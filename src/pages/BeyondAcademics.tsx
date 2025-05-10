@@ -228,7 +228,7 @@ const BeyondAcademics = () => {
               </p>
               <p className="contact-number">
                 <strong>Contact Number: </strong>
-                <a href="tel:9424004441">9424004441</a>
+                <a href="tel:+919424452727">+91 9424452727</a>
               </p>
               <motion.a 
                 href="https://raw.githubusercontent.com/devloper-dp/vpa/86a402080c5b1f28399a4526c5c70515e06a0a9a/public/documents/vpa-complaint.pdf" 

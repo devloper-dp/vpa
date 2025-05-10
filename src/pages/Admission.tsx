@@ -384,9 +384,7 @@ const Admission = () => {
                 <Phone size={24} />
                 <h3>Phone Numbers</h3>
                 <p>
-                  <a href="tel:8989950059">8989950059</a>
-                  <br />
-                  <a href="tel:9589412412">9589412412</a>
+                  <a href="tel:+919424452727">+91 9424452727</a>
                 </p>
               </motion.div>
 
