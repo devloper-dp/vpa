@@ -1,0 +1,235 @@
+/* Mandatory Public Disclosure Page Styles */
+.disclosure-page {
+  padding-top: 160px;
+  background: #f8f9fa;
+  min-height: 100vh;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.inner-heading {
+  background: linear-gradient(45deg, #0A1F6F, #1a3db2);
+  padding: 60px 0;
+  text-align: center;
+  margin-bottom: 40px;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.inner-heading::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url('https://images.pexels.com/photos/5212326/pexels-photo-5212326.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1') center / cover;
+  opacity: 0.1;
+}
+
+.inner-heading h1 {
+  font-size: 40px;
+  font-weight: 800;
+  color: #fff;
+  margin: 0;
+  text-transform: uppercase;
+  font-family: 'Montserrat', sans-serif;
+  letter-spacing: 2px;
+  position: relative;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.disclosure-content {
+  padding: 0 0 80px;
+}
+
+.page-wrapper {
+  background: #fff;
+  padding: 40px;
+  border-radius: 15px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+  margin: 0 auto;
+  max-width: 1000px;
+  border: 1px solid rgba(10, 31, 111, 0.1);
+}
+
+/* Download Button Styles */
+.disclosure-actions {
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.download-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 15px 30px;
+  background: #0A1F6F;
+  color: #fff;
+  border: none;
+  border-radius: 50px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  box-shadow: 0 3px 10px rgba(10, 31, 111, 0.2);
+}
+
+.download-btn:hover:not(:disabled) {
+  background: #f39c12;
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(243, 156, 18, 0.3);
+}
+
+.download-btn:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+.download-btn.loading {
+  position: relative;
+  padding-left: 45px;
+}
+
+.download-btn.loading::before {
+  content: '';
+  position: absolute;
+  left: 15px;
+  width: 20px;
+  height: 20px;
+  border: 2px solid #fff;
+  border-top-color: transparent;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Error Message Styles */
+.error-message {
+  color: #dc3545;
+  margin-top: 15px;
+  padding: 10px 15px;
+  background: rgba(220, 53, 69, 0.1);
+  border-radius: 5px;
+  font-size: 14px;
+  font-weight: 500;
+  text-align: center;
+  border-left: 4px solid #dc3545;
+}
+
+/* PDF Preview Styles */
+.pdf-preview {
+  margin-top: 30px;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  background: #f8f9fa;
+  height: 800px;
+  position: relative;
+  border: 1px solid rgba(10, 31, 111, 0.1);
+}
+
+.pdf-preview::before {
+  content: 'Loading PDF...';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #666;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.pdf-preview iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+  position: relative;
+  z-index: 1;
+  background: #fff;
+}
+
+/* Responsive Styles */
+@media (max-width: 991px) {
+  .inner-heading h1 {
+    font-size: 32px;
+  }
+
+  .page-wrapper {
+    padding: 30px;
+  }
+
+  .pdf-preview {
+    height: 700px;
+  }
+
+  .download-btn {
+    padding: 12px 25px;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 767px) {
+  .disclosure-page {
+    padding-top: 120px;
+  }
+
+  .inner-heading {
+    padding: 40px 0;
+  }
+
+  .inner-heading h1 {
+    font-size: 28px;
+  }
+
+  .page-wrapper {
+    padding: 20px;
+  }
+
+  .pdf-preview {
+    height: 600px;
+  }
+
+  .download-btn {
+    padding: 10px 20px;
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 576px) {
+  .disclosure-page {
+    padding-top: 100px;
+  }
+
+  .inner-heading h1 {
+    font-size: 24px;
+  }
+
+  .download-btn {
+    width: 100%;
+    justify-content: center;
+    padding: 12px 20px;
+  }
+
+  .pdf-preview {
+    height: 500px;
+  }
+
+  .error-message {
+    font-size: 13px;
+    padding: 8px 12px;
+  }
+}

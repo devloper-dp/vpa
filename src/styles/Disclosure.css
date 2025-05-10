@@ -1,0 +1,245 @@
+/* Public Disclosure Page Styles */
+.disclosure-page {
+  padding-top: 160px;
+  background: #f8f9fa;
+  min-height: 100vh;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.inner-heading {
+  background: linear-gradient(45deg, #0A1F6F, #1a3db2);
+  padding: 60px 0;
+  text-align: center;
+  margin-bottom: 40px;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.inner-heading::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url('https://images.pexels.com/photos/5212326/pexels-photo-5212326.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1') center/cover;
+  opacity: 0.1;
+}
+
+.inner-heading h1 {
+  font-size: 40px;
+  font-weight: 800;
+  color: #fff;
+  margin: 0;
+  text-transform: uppercase;
+  font-family: 'Montserrat', sans-serif;
+  letter-spacing: 2px;
+  position: relative;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.disclosure-content {
+  padding: 0 0 80px;
+}
+
+.page-wrapper {
+  background: #fff;
+  padding: 40px;
+  border-radius: 15px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+  margin: 0 auto;
+  max-width: 1000px;
+  border: 1px solid rgba(10, 31, 111, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.page-wrapper:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.page-wrapper h3 {
+  color: #0A1F6F;
+  font-size: 24px;
+  margin: 30px 0 20px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  text-align: center;
+  position: relative;
+  padding-bottom: 15px;
+  text-transform: uppercase;
+}
+
+.page-wrapper h3::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60px;
+  height: 3px;
+  background: #f39c12;
+  border-radius: 2px;
+  transition: width 0.3s ease;
+}
+
+.page-wrapper h3:hover::after {
+  width: 100px;
+}
+
+.page-wrapper h3:first-child {
+  margin-top: 0;
+}
+
+/* Table Styles */
+.table {
+  width: 100%;
+  margin-bottom: 30px;
+  border-collapse: separate;
+  border-spacing: 0;
+  background: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+.table-sm {
+  font-size: 14px;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.table td {
+  padding: 15px;
+  border: 1px solid #dee2e6;
+  vertical-align: middle;
+  color: #52575e;
+  transition: all 0.3s ease;
+}
+
+.table tr:first-child td {
+  background-color: #f8f9fa;
+  font-weight: 600;
+  color: #0A1F6F;
+}
+
+.table tr:nth-child(even) {
+  background-color: #f8f9fa;
+}
+
+.table tr:hover td {
+  background-color: rgba(10, 31, 111, 0.05);
+}
+
+.table strong {
+  color: #0A1F6F;
+  font-weight: 600;
+}
+
+/* Button Styles */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  font-size: 14px;
+  font-weight: 600;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.btn-primary {
+  background: #0A1F6F;
+  color: #fff;
+  border: 2px solid #0A1F6F;
+}
+
+.btn-primary:hover {
+  background: #f39c12;
+  border-color: #f39c12;
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(243, 156, 18, 0.3);
+}
+
+/* Responsive Styles */
+@media (max-width: 991px) {
+  .inner-heading h1 {
+    font-size: 32px;
+  }
+
+  .page-wrapper {
+    padding: 30px;
+  }
+
+  .page-wrapper h3 {
+    font-size: 22px;
+  }
+}
+
+@media (max-width: 767px) {
+  .disclosure-page {
+    padding-top: 120px;
+  }
+
+  .inner-heading {
+    padding: 40px 0;
+  }
+
+  .inner-heading h1 {
+    font-size: 28px;
+  }
+
+  .page-wrapper {
+    padding: 20px;
+  }
+
+  .page-wrapper h3 {
+    font-size: 20px;
+  }
+
+  .table-sm {
+    font-size: 13px;
+  }
+
+  .table td {
+    padding: 12px;
+  }
+}
+
+@media (max-width: 576px) {
+  .disclosure-page {
+    padding-top: 100px;
+  }
+
+  .inner-heading h1 {
+    font-size: 24px;
+  }
+
+  .page-wrapper h3 {
+    font-size: 18px;
+  }
+
+  .table-sm {
+    font-size: 12px;
+  }
+
+  .table td {
+    padding: 10px;
+  }
+
+  .btn {
+    font-size: 12px;
+    padding: 8px 16px;
+    width: 100%;
+    justify-content: center;
+    margin-top: 5px;
+  }
+}

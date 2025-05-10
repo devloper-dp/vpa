@@ -1,0 +1,107 @@
+/* Choice section styles */
+.choice-container {
+  padding: 60px 0 70px;
+  text-align: center;
+  background: #f8f8f8;
+  position: relative;
+}
+
+.choice-wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.choice-title {
+  margin-bottom: 30px;
+}
+
+.choice-title h1 {
+  font-size: 40px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 0;
+}
+
+.choice-title h1 span {
+  color: #f39c12;
+  display: block;
+  font-size: 32px;
+}
+
+.choice-container p {
+  color: #555;
+  font-size: 16px;
+  max-width: 900px;
+  margin: 0 auto 30px;
+  line-height: 1.8;
+}
+
+.choice-button {
+  margin-top: 30px;
+}
+
+.choice-button a {
+  display: inline-block;
+  background: #ee3131;
+  color: #fff;
+  padding: 18px 38px;
+  border-radius: 36px;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 600;
+  text-transform: uppercase;
+  transition: all 0.3s ease;
+  letter-spacing: 1px;
+}
+
+.choice-button a:hover {
+  background: #333;
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive styles */
+@media (max-width: 991px) {
+  .choice-title h1 {
+    font-size: 36px;
+  }
+  
+  .choice-title h1 span {
+    font-size: 28px;
+  }
+  
+  .choice-container p {
+    font-size: 15px;
+    padding: 0;
+  }
+}
+
+@media (max-width: 767px) {
+  .choice-title h1 {
+    font-size: 32px;
+  }
+  
+  .choice-title h1 span {
+    font-size: 24px;
+  }
+  
+  .choice-container p {
+    font-size: 14px;
+  }
+  
+  .choice-button a {
+    padding: 15px 30px;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 576px) {
+  .choice-title h1 {
+    font-size: 28px;
+  }
+  
+  .choice-title h1 span {
+    font-size: 22px;
+  }
+}
